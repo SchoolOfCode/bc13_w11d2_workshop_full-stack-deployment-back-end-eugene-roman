@@ -3,7 +3,7 @@ import logger from "morgan";
 import cors from "cors";
 
 import shoppingListRouter from "./routes/shoppingList.js";
-const PORT = 3005;
+// const PORT = 3005;
 const app = express();
 
 app.use(cors());
@@ -14,6 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/items", shoppingListRouter);
 
 
-app.listen(PORT, ()=>{console.log(`This server is running on ${PORT}`)})
+// app.listen(PORT, ()=>{console.log(`This server is running on ${PORT}`)})
 
 export default app;
